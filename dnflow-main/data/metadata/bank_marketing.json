@@ -1,0 +1,335 @@
+{
+    "name": "bank_marketing",
+    "task_type": "binclass",
+    "header": "infer",
+    "column_names": [
+        "age",
+        "job",
+        "marital",
+        "education",
+        "default",
+        "balance",
+        "housing",
+        "loan",
+        "contact",
+        "day",
+        "month",
+        "duration",
+        "campaign",
+        "pdays",
+        "previous",
+        "poutcome",
+        "y"
+    ],
+    "num_col_idx": [
+        0,
+        5,
+        9,
+        11,
+        12,
+        13,
+        14
+    ],
+    "cat_col_idx": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        15
+    ],
+    "target_col_idx": [
+        16
+    ],
+    "file_type": "csv",
+    "train_num": 40689,
+    "test_num": 4522,
+    "val_num": 0,
+    "int_columns": [
+        "age",
+        "balance",
+        "day",
+        "duration",
+        "campaign",
+        "pdays",
+        "previous"
+    ],
+    "int_col_idx": [
+        0,
+        5,
+        9,
+        11,
+        12,
+        13,
+        14
+    ],
+    "int_col_idx_wrt_num": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "idx_mapping": {
+        "0": 0,
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 10,
+        "5": 1,
+        "6": 11,
+        "7": 12,
+        "8": 13,
+        "9": 2,
+        "10": 14,
+        "11": 3,
+        "12": 4,
+        "13": 5,
+        "14": 6,
+        "15": 15,
+        "16": 16
+    },
+    "inverse_idx_mapping": {
+        "0": 0,
+        "7": 1,
+        "8": 2,
+        "9": 3,
+        "10": 4,
+        "1": 5,
+        "11": 6,
+        "12": 7,
+        "13": 8,
+        "2": 9,
+        "14": 10,
+        "3": 11,
+        "4": 12,
+        "5": 13,
+        "6": 14,
+        "15": 15,
+        "16": 16
+    },
+    "idx_name_mapping": {
+        "0": "age",
+        "1": "job",
+        "2": "marital",
+        "3": "education",
+        "4": "default",
+        "5": "balance",
+        "6": "housing",
+        "7": "loan",
+        "8": "contact",
+        "9": "day",
+        "10": "month",
+        "11": "duration",
+        "12": "campaign",
+        "13": "pdays",
+        "14": "previous",
+        "15": "poutcome",
+        "16": "y"
+    },
+    "column_info": {
+        "0": {
+            "type": "numerical",
+            "max": 95.0,
+            "min": 18.0
+        },
+        "1": {
+            "type": "numerical",
+            "max": 102127.0,
+            "min": -6847.0
+        },
+        "2": {
+            "type": "numerical",
+            "max": 31.0,
+            "min": 1.0
+        },
+        "3": {
+            "type": "numerical",
+            "max": 4918.0,
+            "min": 0.0
+        },
+        "4": {
+            "type": "numerical",
+            "max": 63.0,
+            "min": 1.0
+        },
+        "5": {
+            "type": "numerical",
+            "max": 871.0,
+            "min": -1.0
+        },
+        "6": {
+            "type": "numerical",
+            "max": 275.0,
+            "min": 0.0
+        },
+        "7": {
+            "type": "categorical",
+            "categorizes": [
+                "admin.",
+                "blue-collar",
+                "entrepreneur",
+                "housemaid",
+                "management",
+                "retired",
+                "self-employed",
+                "services",
+                "student",
+                "technician",
+                "unemployed",
+                "unknown"
+            ]
+        },
+        "8": {
+            "type": "categorical",
+            "categorizes": [
+                "divorced",
+                "married",
+                "single"
+            ]
+        },
+        "9": {
+            "type": "categorical",
+            "categorizes": [
+                "primary",
+                "secondary",
+                "tertiary",
+                "unknown"
+            ]
+        },
+        "10": {
+            "type": "categorical",
+            "categorizes": [
+                "no",
+                "yes"
+            ]
+        },
+        "11": {
+            "type": "categorical",
+            "categorizes": [
+                "no",
+                "yes"
+            ]
+        },
+        "12": {
+            "type": "categorical",
+            "categorizes": [
+                "no",
+                "yes"
+            ]
+        },
+        "13": {
+            "type": "categorical",
+            "categorizes": [
+                "cellular",
+                "telephone",
+                "unknown"
+            ]
+        },
+        "14": {
+            "type": "categorical",
+            "categorizes": [
+                "apr",
+                "aug",
+                "dec",
+                "feb",
+                "jan",
+                "jul",
+                "jun",
+                "mar",
+                "may",
+                "nov",
+                "oct",
+                "sep"
+            ]
+        },
+        "15": {
+            "type": "categorical",
+            "categorizes": [
+                "failure",
+                "other",
+                "success",
+                "unknown"
+            ]
+        },
+        "16": {
+            "type": "categorical",
+            "categorizes": [
+                "no",
+                "yes"
+            ]
+        }
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "3": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "4": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "5": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "6": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "7": {
+                "sdtype": "categorical"
+            },
+            "8": {
+                "sdtype": "categorical"
+            },
+            "9": {
+                "sdtype": "categorical"
+            },
+            "10": {
+                "sdtype": "categorical"
+            },
+            "11": {
+                "sdtype": "categorical"
+            },
+            "12": {
+                "sdtype": "categorical"
+            },
+            "13": {
+                "sdtype": "categorical"
+            },
+            "14": {
+                "sdtype": "categorical"
+            },
+            "15": {
+                "sdtype": "categorical"
+            },
+            "16": {
+                "sdtype": "categorical"
+            }
+        }
+    },
+    "data_path": "/mnt/data/bank_marketing_processed/real.csv",
+    "test_path": "/mnt/data/bank_marketing_processed/test.csv",
+    "val_path": null,
+    "split_seed": 1234,
+    "split_rule": "90/10 train-test split with train-side categorical coverage"
+}

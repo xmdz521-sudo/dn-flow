@@ -1,0 +1,72 @@
+dataset:
+  name: bank_marketing
+  task_type: classification
+  target: y
+  metadata: data/metadata/bank_marketing.json
+  real: data/bank_marketing/real.csv
+  test: data/bank_marketing/test.csv
+  training_size: 36620
+  validation_size: 4069
+  split_seed: 42
+model:
+  hidden_dim: 512
+  layers: 6
+  heads: 8
+  feedforward_dim: 1024
+  dropout: 0.05
+  alpha: 0.1
+  selector_init_bias: 0.0
+training:
+  epochs: 1000
+  batch_size: 512
+  optimizer: AdamW
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  scheduler: ReduceLROnPlateau
+  scheduler_factor: 0.5
+  scheduler_patience: 20
+  minimum_learning_rate: 1.0e-06
+  gradient_clip: 1.0
+  self_conditioning_probability: 0.0
+  seed: 42
+  training_seeds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+sampling:
+  steps: 100
+  solver: heun
+  sampling_seeds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+loss:
+  flow: 1.0
+  driver: 0.1
+  reconstruction: 0.2
+  correlation: 0.1
+  sparsity: 0.001
+  binary: 0.001
+preprocessing:
+  n_quantiles: 1000
+  output_distribution: normal
+  random_state: 42

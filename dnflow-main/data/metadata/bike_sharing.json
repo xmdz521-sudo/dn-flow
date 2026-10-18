@@ -1,0 +1,285 @@
+{
+    "name": "bike_sharing",
+    "task_type": "regression",
+    "header": "infer",
+    "column_names": [
+        "season",
+        "yr",
+        "mnth",
+        "hr",
+        "holiday",
+        "weekday",
+        "workingday",
+        "weathersit",
+        "temp",
+        "atemp",
+        "hum",
+        "windspeed",
+        "cnt"
+    ],
+    "num_col_idx": [
+        8,
+        9,
+        10,
+        11
+    ],
+    "cat_col_idx": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+    ],
+    "target_col_idx": [
+        12
+    ],
+    "file_type": "csv",
+    "train_num": 15641,
+    "test_num": 1738,
+    "val_num": 0,
+    "int_columns": [],
+    "int_col_idx": [],
+    "int_col_idx_wrt_num": [],
+    "idx_mapping": {
+        "0": 4,
+        "1": 5,
+        "2": 6,
+        "3": 7,
+        "4": 8,
+        "5": 9,
+        "6": 10,
+        "7": 11,
+        "8": 0,
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "12": 12
+    },
+    "inverse_idx_mapping": {
+        "4": 0,
+        "5": 1,
+        "6": 2,
+        "7": 3,
+        "8": 4,
+        "9": 5,
+        "10": 6,
+        "11": 7,
+        "0": 8,
+        "1": 9,
+        "2": 10,
+        "3": 11,
+        "12": 12
+    },
+    "idx_name_mapping": {
+        "0": "season",
+        "1": "yr",
+        "2": "mnth",
+        "3": "hr",
+        "4": "holiday",
+        "5": "weekday",
+        "6": "workingday",
+        "7": "weathersit",
+        "8": "temp",
+        "9": "atemp",
+        "10": "hum",
+        "11": "windspeed",
+        "12": "cnt"
+    },
+    "column_info": {
+        "0": {
+            "type": "numerical",
+            "max": 1.0,
+            "min": 0.02
+        },
+        "1": {
+            "type": "numerical",
+            "max": 1.0,
+            "min": 0.0
+        },
+        "2": {
+            "type": "numerical",
+            "max": 1.0,
+            "min": 0.0
+        },
+        "3": {
+            "type": "numerical",
+            "max": 0.8507,
+            "min": 0.0
+        },
+        "4": {
+            "type": "categorical",
+            "categorizes": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        "5": {
+            "type": "categorical",
+            "categorizes": [
+                "0",
+                "1"
+            ]
+        },
+        "6": {
+            "type": "categorical",
+            "categorizes": [
+                "1",
+                "10",
+                "11",
+                "12",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ]
+        },
+        "7": {
+            "type": "categorical",
+            "categorizes": [
+                "0",
+                "1",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "2",
+                "20",
+                "21",
+                "22",
+                "23",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ]
+        },
+        "8": {
+            "type": "categorical",
+            "categorizes": [
+                "0",
+                "1"
+            ]
+        },
+        "9": {
+            "type": "categorical",
+            "categorizes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ]
+        },
+        "10": {
+            "type": "categorical",
+            "categorizes": [
+                "0",
+                "1"
+            ]
+        },
+        "11": {
+            "type": "categorical",
+            "categorizes": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        "12": {
+            "type": "numerical",
+            "max": 977.0,
+            "min": 1.0
+        }
+    },
+    "metadata": {
+        "columns": {
+            "0": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "1": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "2": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "3": {
+                "sdtype": "numerical",
+                "computer_representation": "Float"
+            },
+            "4": {
+                "sdtype": "categorical"
+            },
+            "5": {
+                "sdtype": "categorical"
+            },
+            "6": {
+                "sdtype": "categorical"
+            },
+            "7": {
+                "sdtype": "categorical"
+            },
+            "8": {
+                "sdtype": "categorical"
+            },
+            "9": {
+                "sdtype": "categorical"
+            },
+            "10": {
+                "sdtype": "categorical"
+            },
+            "11": {
+                "sdtype": "categorical"
+            },
+            "12": {
+                "sdtype": "numerical",
+                "computer_representation": "Int64"
+            }
+        }
+    },
+    "data_path": "bike_sharing_processed\\real.csv",
+    "test_path": "bike_sharing_processed\\test.csv",
+    "val_path": null,
+    "split_seed": 1234,
+    "split_rule": "90/10 train-test split with train-side categorical coverage",
+    "source_file": "hour.csv",
+    "notes": {
+        "used_csv": "hour.csv",
+        "dropped_columns": [
+            "instant",
+            "dteday",
+            "casual",
+            "registered"
+        ],
+        "drop_reason": {
+            "instant": "ID column",
+            "dteday": "date string column",
+            "casual": "target leakage risk because cnt = casual + registered",
+            "registered": "target leakage risk because cnt = casual + registered"
+        },
+        "target": "cnt"
+    }
+}
